@@ -1,0 +1,15 @@
+---
+import { formDataToObject } from 'astro:actions';
+
+const { title, description, url } = Astro.props;
+---
+<blogpost>
+    <h2>{title}</h2>
+    <p>{description}</p>
+    <a href={url}>阅读更多</a>
+</blogpost>
+<style>
+  blogpost {
+    margin-bottom: 2rem;1
+  }
+</style>
